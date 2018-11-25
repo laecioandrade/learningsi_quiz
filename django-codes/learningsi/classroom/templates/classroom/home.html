@@ -1,11 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Bem vindo ao learningsi! <span class="icon-emo-happy"></span></h2>
-  <p class="lead">
-    If you already have an account, go ahead and <a href="{% url 'login' %}">log in</a>. If you are new to Django Schools, get started
-    by creating a <a href="{% url 'student_signup' %}">student account</a> or a <a href="{% url 'teacher_signup' %}">teacher account</a>.
-  </p>
-  <hr>
-  <h3>What's this about?</h3>
+  <div class="container shape-container d-flex align-items-center py-lg">
+          <div class="col px-0">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-6 text-center">
+                <img src="../../../static/img/learning-brand.png" style="width: 200px;" class="img-fluid">
+                <p class="lead text-white">Um site com os melhores conteúdos das disciplinas do curso de Sistemas de Informação</p>
+                <div class="btn-wrapper mt-5">
+                  <a href="{% url 'login' %}">
+                    <span class="btn-inner--icon neutral"><i class="ni ni-cloud-download-95"></i></span>
+                    <span class="btn-inner--text">Entrar</span>
+                  </a>
+                  <a href="{% url 'student_signup' %}" class="btn btn-lg btn-github btn-icon mb-3 mb-sm-0" target="_blank">
+                    <span class="btn-inner--icon"><i class="fa fa-github"></i></span>
+                    <span class="btn-inner--text">
+                      <span class="text-warning">Cadastre-se grátis</span> já</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 {% endblock %}
