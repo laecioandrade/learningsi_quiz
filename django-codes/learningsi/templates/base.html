@@ -17,7 +17,7 @@
     {% endif %}
   </head>
   <body>
-    <div class="container my-4">
+    <div class="container my-4 text-white">
       <div class="row justify-content-center">
         <div class="col-md-10 col-sm-12">
           <div class="row">
@@ -39,8 +39,8 @@
               {% if user.is_authenticated %}
                 <p class="pt-3">Logged in as <strong>{{ user.username }}</strong>. <a href="{% url 'logout' %}">Log out</a>.</p>
               {% else %}
-                <a href="{% url 'login' %}" class="btn btn-light" role="button">Log in</a>
-                <a href="{% url 'signup' %}" class="btn btn-primary" role="button">Sign up</a>
+                <a href="{% url 'login' %}" class="btn btn-light" role="button">Entrar</a>
+                <a href="{% url 'student_signup' %}" class="btn btn-primary" role="button">Cadastre-se Grátis</a>
               {% endif %}
             </div>
           </div>
