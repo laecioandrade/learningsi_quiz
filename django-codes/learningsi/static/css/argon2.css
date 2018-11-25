@@ -5709,7 +5709,7 @@ input[type='button'].btn-block
 
     border: .0625rem solid rgba(0, 0, 0, .05);
     border-radius: .25rem; 
-    background-color: #fff;
+    background-color: rgba(50, 40, 80, 0.5);
     background-clip: border-box;
 }
 
@@ -5726,7 +5726,7 @@ input[type='button'].btn-block
 
     border: .0625rem solid rgba(0, 0, 0, .05);
     border-radius: .25rem; 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     background-clip: border-box;
 }
 
