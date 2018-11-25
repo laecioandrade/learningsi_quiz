@@ -39,48 +39,6 @@
               </h1>
             </div>
 
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
-                <i class="ni ni-ui-04 d-lg-none"></i>
-                <span class="nav-link-inner--text">Mais</span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-xl">
-                <div class="dropdown-menu-inner">
-                  <a href="Sobre.html" class="media d-flex align-items-center">
-                    <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
-                      <i class="ni ni-spaceship"></i>
-                    </div>
-
-
-                    <div class="media-body ml-3">
-                      <h6 class="heading text-primary mb-md-1">Quem somos</h6>
-                      <p class="description d-none d-md-inline-block mb-0">Grupo destinado a desenvolver um site que sirva de auxilio para discentes de compucao.</p>
-                    </div>
-                  </a>
-                  <a href="Contatos.html" class="media d-flex align-items-center">
-                    <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-                      <i class="ni ni-palette"></i>
-                    </div>
-
-
-                    <div class="media-body ml-3">
-                      <h6 class="heading text-primary mb-md-1">Contato</h6>
-                      <p class="description d-none d-md-inline-block mb-0">Envie nos um email.</p>
-                    </div>
-                  </a>
-
-                  <a href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html" class="media d-flex align-items-center">
-                    <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                      <i class="ni ni-ui-04"></i>
-                    </div>
-                    <div class="media-body ml-3">
-                      <h5 class="heading text-warning mb-md-1">Ajuda</h5>
-                      <p class="description d-none d-md-inline-block mb-0">Como estudar no Learning SI</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </li>
             <div class="col-6 text-right text-white">
               {% if user.is_authenticated %}
                 <p class="pt-3">Logado como <strong>{{ user.username }}</strong>. <a href="{% url 'logout' %}">Sair</a>.</p>
@@ -89,7 +47,7 @@
               {% endif %}
             </div>
           </div>
-          <div class=" mb-3">
+          <div class="mb-3">
             <div class="card-body">
               {% for message in messages %}
                 <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
@@ -103,13 +61,34 @@
               {% endblock %}
             </div>
           </div>
-          <footer>
-            <a href="https://simpleisbetterthancomplex.com">© SimpleIsBetterThanComplex.com</a>
-            /
-            <a href="https://simpleisbetterthancomplex.com/tutorial/2018/01/18/how-to-implement-multiple-user-types-with-django.html">Read more about this example</a>
-            /
-            <a href="https://github.com/sibtc/django-multiple-user-types-example">GitHub repository</a>
-          </footer>
+  <footer>
+    <div class="container">
+      <div class="row align-items-center justify-content-md-between">
+        <div class="col-md-6">
+          <div class="copyright">
+            &copy; 2018
+            <a href="https://www.creative-tim.com" target="_blank">Learning SI</a>.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul class="nav nav-footer justify-content-end">
+            <li class="nav-item">
+              <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md" class="nav-link" target="_blank">Ajuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
         </div>
       </div>
     </div>
