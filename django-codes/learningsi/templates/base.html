@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{% block title %}Django School{% endblock %}</title>
+    <title>{% block title %}Learning SI - Home{% endblock %}</title>
     <link rel="icon" href="{% static 'img/favicon.png' %}">
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
 
@@ -25,7 +25,7 @@
               <h1 class="logo">
 
                 <a href="{% url 'home' %}">
-                  <a class="navbar-brand mr-lg-5" href="/localhost">
+                  <a class="navbar-brand mr-lg-5" href="http://127.0.0.1:8000/">
                     <img src="{% static 'img/learning-brand.png' %}">
                   </a>
                   {% if user.is_authenticated %}
@@ -67,19 +67,19 @@
         <div class="col-md-6">
           <div class="copyright">
             &copy; 2018
-            <a href="https://www.creative-tim.com" target="_blank">Learning SI</a>.
+            <a href="http://127.0.0.1:8000/">Learning SI</a>.
           </div>
         </div>
         <div class="col-md-6">
           <ul class="nav nav-footer justify-content-end">
             <li class="nav-item">
-              <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Home</a>
+              <a href="http://127.0.0.1:8000/" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">Quem Somos</a>
+              <a href="{% static 'sobre.html' %}" class="nav-link">Quem Somos</a>
             </li>
             <li class="nav-item">
-              <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Contato</a>
+              <a href="{% static 'contatos.html' %}" class="nav-link">Contato</a>
             </li>
             <li class="nav-item">
               <a href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md" class="nav-link" target="_blank">Ajuda</a>
