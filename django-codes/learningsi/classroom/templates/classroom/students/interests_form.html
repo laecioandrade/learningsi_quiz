@@ -3,6 +3,7 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+<div class="card card-body">
   <h2 class="mb-3">Atualizar disciplinas</h2>
   <form method="post" novalidate>
     {% csrf_token %}
@@ -10,4 +11,5 @@
     <button type="submit" class="btn btn-success">Salvar mudanças</button>
     <a href="{% url 'students:quiz_list' %}" class="btn btn-outline-secondary">Cancelar</a>
   </form>
+</div>
 {% endblock %}

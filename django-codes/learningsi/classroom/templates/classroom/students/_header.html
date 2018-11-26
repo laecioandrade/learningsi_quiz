@@ -1,4 +1,5 @@
-<h2>Questionários</h2>
+<div class="card card-body">
+	<h2>Questionários</h2>
 <p class="text-muted">
   Disciplinas:{% for subject in user.student.interests.all %} {{ subject.get_html_badge }}{% endfor %}
   <a href="{% url 'students:student_interests' %}"><small>(Atualizar interesses)</small></a>
@@ -6,9 +7,10 @@
 
 <ul class="nav nav-tabs mb-3">
   <li class="nav-item">
-    <a class="nav-link{% if active == 'new' %} active{% endif %}" href="{% url 'students:quiz_list' %}">Novo test</a>
+    <a class="nav-link{% if active == 'new' %} active{% endif %}" href="{% url 'students:quiz_list' %}">Novo teste</a>
   </li>
   <li class="nav-item">
     <a class="nav-link{% if active == 'taken' %} active{% endif %}" href="{% url 'students:taken_quiz_list' %}">Respondidos</a>
   </li>
 </ul>
+</div>
